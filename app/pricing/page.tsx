@@ -4,7 +4,7 @@ const features = [
     price: "$40/month",
     fees: "3.7% + 30¢ per transaction",
     description:
-      "Start selling online with a simple and easy to use platform. Create your first store in minutes..",
+      "Start selling online with a simple and easy-to-use platform. Create your first store in minutes.",
   },
   {
     name: "Standard",
@@ -27,16 +27,16 @@ const Pricing = () => {
     <div className="flex flex-col justify-center items-center">
       <div
         className="
-        text-4xl 
-        text-center
-         md:text-6xl 
-         font-bold 
-         bg-gradient-to-r
-        from-black
-         to-gray-500 
-         bg-clip-text
-         text-transparent md:pb-10
-        
+          text-4xl 
+          text-center
+          md:text-6xl 
+          font-bold 
+          bg-gradient-to-r
+          from-black
+          to-gray-500 
+          bg-clip-text
+          text-transparent 
+          md:pb-10
         "
       >
         Pricing
@@ -50,26 +50,23 @@ const Pricing = () => {
           <div key={index} className="p-4">
             <div
               className="
-                    grid
-                    justify-center
-                    items-center
-                    gap-4
-                    border
-                    rounded-xl
-                    p-4 
-                    w-96
-                    h-96
-                    
-                    
-                    
-                    "
+                grid
+                justify-center
+                items-center
+                gap-4
+                border
+                rounded-xl
+                p-4 
+                w-96
+                h-96
+              "
             >
               <div className="text-2xl text-black pb-4">{feature.name}</div>
-              <div className="text-xl ">{feature.price}</div>
-              <div className="text-xl ">{feature.fees}</div>
+              <div className="text-xl">{feature.price}</div>
+              <div className="text-xl">{feature.fees}</div>
               <div className="text-xl">{feature.description}</div>
 
-              <div className="bg-blue-500 text-white p-4 border rounded-xl items-center justify-center">
+              <div className="bg-blue-500 text-white p-4 border rounded-xl items-center justify-center flex">
                 Get Started
               </div>
             </div>

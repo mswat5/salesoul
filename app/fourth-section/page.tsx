@@ -9,11 +9,10 @@ const FourthSection = () => {
         bg-clip-text
         text-transparent
         pb-10
-        font-bold
-        
-        "
+        font-bold"
       >
-        Content Management System.Made Simple.
+        Content Management System. Made Simple.
+        {/* Video Section */}
         <div className="justify-center items-center flex md:pt-10 p-10">
           <video className="rounded-xl md:w-2/3" autoPlay muted loop>
             <source src="/content/food.mp4" type="video/mp4" />
