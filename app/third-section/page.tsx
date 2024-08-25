@@ -26,7 +26,7 @@ const ThirdSection = () => {
               width={50}
               height={50}
             />
-            <div>Customize your menus to fit your restaurant's theme.</div>
+            <div>Customize your menus to fit your restaurant&apos;s theme.</div>
           </div>
           <div className="flex items-center gap-4">
             <Image

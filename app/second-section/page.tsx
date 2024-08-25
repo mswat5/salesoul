@@ -56,9 +56,9 @@ const SecondSection = () => {
             business.
           </div>
           <div className="text-lg md:text-xl mb-8">
-            Whether you're running a small café or a high-end restaurant, our
-            platform provides everything you need to manage your food business
-            online.
+            Whether you&apos;re running a small cafe or a high-end restaurant,
+            our platform provides everything you need to manage your food
+            business online.
           </div>
           <button className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600">
             Get Started
