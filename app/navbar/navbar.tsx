@@ -21,39 +21,24 @@ import Logo from "./logo";
 
 const components: { title: string; description: string }[] = [
   {
-    title: "Frozen",
-
+    title: "Hostels",
     description:
-      "Recommended template for most use cases. Includes all the components you need to get started.",
+      "Manage hostel bookings, room assignments, and NFT-based ownership.",
   },
   {
-    title: "Swift",
-
+    title: "Hotels",
     description:
-      "A template with a minimal set of components. Use this template if you want to build your own components.",
+      "Oversee hotel reservations, room services, and loyalty rewards with NFTs.",
   },
   {
-    title: "Tuscany",
-
+    title: "Restaurants",
     description:
-      "Advanced template with more components and features. Use this template if you want to build a complex UI.",
+      "Handle restaurant table bookings, menu management, and NFT-based discounts.",
   },
   {
-    title: "Amber",
-
-    description: "Great for building a marketing or landing page.",
-  },
-  {
-    title: "Tide",
-
+    title: "Tiffin Service",
     description:
-      "Layered template with a sidebar navigation. Great for building a dashboard or admin panel.",
-  },
-  {
-    title: "Mint",
-
-    description:
-      "Nice template for building a blog or a content-heavy website.",
+      "Organize tiffin deliveries, subscription plans, and NFT-based meal vouchers.",
   },
 ];
 
@@ -73,28 +58,29 @@ export function NavigationMenuBar() {
                   >
                     <Logo />
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      Bird Software
+                      NFT Management Platform
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      eCommerce platform for selling digital products.
+                      A comprehensive solution for managing hostels, hotels,
+                      restaurants, and tiffin services using NFTs.
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
               <ListItem title="Introduction">
-                Learn about the basics of Bird.
+                Learn about the basics of our NFT management platform.
               </ListItem>
               <ListItem title="Demo">
-                How to build a store in 60 seconds with Bird
+                How to manage bookings and services with NFTs.
               </ListItem>
               <ListItem title="Community">
-                Join the community and get help or support.
+                Join the community for support and updates.
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Templates</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Services</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -106,7 +92,7 @@ export function NavigationMenuBar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="/documentation" legacyBehavior passHref>
             <NavigationMenuLink className="font-medium">
               Documentation
             </NavigationMenuLink>
@@ -114,11 +100,8 @@ export function NavigationMenuBar() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink
-              className="
-              font-medium"
-            >
+          <Link href="/pricing" legacyBehavior passHref>
+            <NavigationMenuLink className="font-medium">
               Pricing
             </NavigationMenuLink>
           </Link>
