@@ -1,48 +1,46 @@
-"use client";
-
-import React from "react";
 import Image from "next/image";
 
 const features = [
   {
-    name: "Customizable Stays",
+    name: "Customizable Menus",
     description:
-      "Easily customize hostel, hotel, and restaurant listings with our NFT-based platform, tailored to your needs.",
+      "Choose from a variety of pre-designed food menus or create your own to match your restaurant's theme and cuisine.",
     image: "/images/icon-journey.png",
-    alt: "Customizable Stays",
+    alt: "Customizable Menus",
+    color: "blue",
   },
   {
-    name: "Fast Reservations",
+    name: "Fast Ordering",
     description:
-      "Quickly book rooms or meals through our seamless NFT-powered reservation system.",
+      "Streamline your customers' ordering experience with quick and efficient online ordering and payment options.",
     image: "/images/icon-journey.png",
-    alt: "Fast Reservations",
+    alt: "Fast Ordering",
   },
   {
-    name: "Comprehensive Integrations",
+    name: "Online Reservations",
     description:
-      "Integrate with various services and platforms to enhance your hostel, hotel, or restaurant's offerings.",
+      "Allow customers to book tables and make reservations online with ease, helping you manage your restaurant better.",
     image: "/images/icon-journey.png",
-    alt: "Comprehensive Integrations",
+    alt: "Online Reservations",
   },
   {
-    name: "Full Stack Support",
+    name: "Inventory Management",
     description:
-      "Get end-to-end solutions, from listing management to payment processing, all within our NFT ecosystem.",
+      "Track your inventory and manage stock levels efficiently to ensure you never run out of key ingredients.",
     image: "/images/icon-journey.png",
-    alt: "Full Stack Support",
+    alt: "Inventory Management",
   },
   {
-    name: "Customer Loyalty",
+    name: "Loyalty Programs",
     description:
-      "Reward your loyal customers with NFTs that provide exclusive access to discounts and special offers.",
+      "Set up loyalty rewards to encourage repeat customers and increase customer retention.",
     image: "/images/icon-journey.png",
-    alt: "Customer Loyalty",
+    alt: "Loyalty Programs",
   },
   {
     name: "24/7 Support",
     description:
-      "Receive round-the-clock support from our team to ensure your business runs smoothly.",
+      "Get around-the-clock support to address any issues and ensure smooth operation of your online food ordering system.",
     image: "/images/icon-journey.png",
     alt: "24/7 Support",
   },
@@ -50,93 +48,49 @@ const features = [
 
 const SecondSection = () => {
   return (
-    <div>
-      <div className="md:flex-row flex-col items-center flex justify-center pb-10">
-        <div className="p-5 justify-center md:w-1/3">
-          <div
-            className="
-              bg-gradient-to-r
-              from-blue-800
-              to-green-300
-              bg-clip-text
-              text-transparent
-              text-4xl
-              md:text-6xl
-              font-bold
-              pb-10
-            "
-          >
-            Manage Your Stays & Meals with NFTs
+    <div className="">
+      <div className="md:flex md:justify-between items-center pb-10">
+        <div className="p-5 md:w-1/2">
+          <div className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-green-400 to-yellow-300 bg-clip-text text-transparent pb-10">
+            From cafe to fine dining, our platform caters to every food
+            business.
           </div>
-          <div className="text-2xl mb-8">
-            Whether you're running a hostel, hotel, or restaurant, our NFT
-            platform is designed to grow your business.
+          <div className="text-lg md:text-xl mb-8">
+            Whether you're running a small café or a high-end restaurant, our
+            platform provides everything you need to manage your food business
+            online.
           </div>
-          <button className="bg-blue-500 text-white p-4 justify-center flex md:w-1/3 rounded-lg hover:bg-blue-600">
+          <button className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600">
             Get Started
           </button>
         </div>
 
-        <video className="rounded-xl md:w-2/5 p-4 md:p-0" autoPlay muted loop>
+        <video className="rounded-xl md:w-1/2" autoPlay muted loop>
           <source src="/content/food.mp4" type="video/mp4" />
         </video>
       </div>
 
-      <div className="flex-col items-center justify-center">
-        <div
-          className="
-            text-3xl
-            flex
-            justify-center
-            md:text-5xl
-            font-bold
-            pt-5
-            pb-10
-            bg-gradient-to-r
-            from-purple-400
-            to-blue-800
-            bg-clip-text
-            text-transparent
-          "
-        >
-          Platform Features
+      <div className="text-center py-10">
+        <div className="text-3xl md:text-5xl mb-4 font-bold bg-gradient-to-r from-orange-400 to-red-600 bg-clip-text text-transparent">
+          Key Features for Food Businesses
         </div>
-
-        <div className="grid grid-cols-1 p-4 md:grid md:grid-cols-3 gap-4 md:px-40">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:px-10">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="
-                flex-col space-y-6 pb-10 border
-                p-8 rounded-xl items-center justify-center w-full hover:scale-105 transform transition-all duration-500 ease-in-out
-              "
+              className="p-6 border rounded-xl hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="text-gray-600 text-3xl font-bold">
+              <div className="text-gray-600 text-3xl mb-4">
                 <Image
                   src={feature.image}
                   alt={feature.alt}
-                  width={300}
-                  height={300}
-                  className="object-contain h-20 w-20 items-center justify-center flex mb-10"
+                  width={70}
+                  height={70}
+                  className="mx-auto"
                 />
-                <div>
-                  <div
-                    className="
-                      text-2xl pb-4 bg-gradient-to-t
-                      from-black
-                      to-gray-400
-                      bg-clip-text
-                      text-transparent
-                    "
-                  >
-                    {feature.name}
-                  </div>
-
-                  <div className="bg-gradient-to-r from-gray-800 to-gray-500 bg-clip-text text-transparent text-lg">
-                    {feature.description}
-                  </div>
-                </div>
               </div>
+              <div className="text-2xl font-bold mb-2">{feature.name}</div>
+              <div className="text-lg">{feature.description}</div>
             </div>
           ))}
         </div>

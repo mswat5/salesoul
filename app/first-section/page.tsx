@@ -1,6 +1,6 @@
 const FirstSection = () => {
   return (
-    <section className="md:py-20 py-10 bg-gradient-to-r from-gray-100 to-gray-200 space-y-10">
+    <section className="md:py-20 py-10 bg-gradient-to-r from-gray-00 to-gray-200 space-y-10">
       <div className="container mx-auto text-center">
         <div
           className="text-6xl flex justify-center font-bold md:px-20 pb-10
@@ -10,9 +10,9 @@ const FirstSection = () => {
             to-green-300
             bg-clip-text
             text-transparent
-            "
+          "
         >
-          Manage Your Stays & Meals with NFTs
+          Build an NFT and start thriving with Salesoul
         </div>
 
         <p
@@ -23,10 +23,10 @@ const FirstSection = () => {
             bg-clip-text
             text-transparent
             font-bold
-            "
+          "
         >
-          Whether it's a hostel, hotel, restaurant, or tiffin service, our
-          platform empowers you with NFT-based management.
+          No matter what you sell, Salesoul has everything you need to run your
+          online store.
         </p>
         <div className="flex gap-4 justify-center pt-10">
           <button className="bg-blue-500 text-white px-10 py-4 rounded-md text-lg font-bold">
@@ -39,7 +39,7 @@ const FirstSection = () => {
 
         <div className="pt-10">
           <video className="rounded-xl" autoPlay muted loop>
-            <source src="/content/nft-management.mp4" type="video/mp4" />
+            <source src="/content/food.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
